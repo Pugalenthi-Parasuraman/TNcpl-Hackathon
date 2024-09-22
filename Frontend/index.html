@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predicted Text Editor</title>
+    <!-- Font Awesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <!-- Typing Script CDN Link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Custom CSS file link -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <!-- Nav Section Start Here -->
+    <nav>
+        <div class="container nav_container">
+            <a href="index.html" id="load_server">
+                <h4><span>Text</span>Editor</h4>
+            </a>
+            <ul class="nav_menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <!--- <li><a href="#service">Service</a></li>-->
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#presentation">Text Editor</a></li>
+                <li><a href="#faqs">FAQ</a></li>
+                <!--<li><a href="#courses">Courses</a></li>
+                <li><a href="#contact">Contact</a></li>-->
+            </ul>
+            <button id="open-menu-btn"><i class="fa-solid fa-bars"></i></button>
+            <button id="close-menu-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </nav>
+    <!-- Nav Section End Here -->
+
+    <!-- Header Section Start Here -->
+    <section id="home">
+        <header>
+            <div class="container header_container">
+                <div class="row mb-md-5">
+                    <div class="col-12 col-md-6" data-aos="fade-up">
+                        <div class="header_left_img">
+                            <img src="https://res.cloudinary.com/du6vmyvdh/image/upload/v1712708918/Website%20icons/ai_c39qpi.png" alt="image/ai.png">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 d-flex flex-column justify-content-center pb-5" data-aos="fade-up">
+                        <div class="text-1 text-center text-lg-left">Welcome </div>
+                        <div class="text-2 text-center text-lg-left">Predicted Text editor</div>
+                        <div class="text-3 text-center text-lg-left">Text <span class="typing-1" id="typed-text-1"></span></div>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+    </section>
+
+    <!-- Header Section End Here -->
+
+    <!-- About Me Section Start Here -->
+    <section class="about" id="about">
+        <h2 class="border_bottom" data-aos="fade-down">About</h2>
+        <div class="container about_container">
+            <div class="row justify-content-center">
+                <div class="about-img col-12 col-lg-4 mx-auto" data-aos="fade-right">
+                    <img src="https://res.cloudinary.com/du6vmyvdh/image/upload/v1712708913/Website%20icons/ai2_cmyuac.png" alt="image/ai2.png">
+                </div>
+                <div class="about-text col-12 col-lg-8 d-flex flex-column justify-content-center" data-aos="fade-down">
+                    <div class="text">
+                        I am Predictive Text Editor and I'm a <span class="typing-2" id="typed-text-2"></span>
+                    </div>
+                    <p>This project aims to create a predictive text editor with emotion detection capabilities,
+                        providing users with text prediction suggestions while typing to enhance efficiency and accuracy.
+                        Key features include predictive text suggestions, real-time emotion detection using advanced
+                        natural language processing techniques, a user-friendly interface, real-time analysis,
+                        and customizable settings for personalized user experience. By combining predictive text
+                        technology with emotion detection, the project aims to enhance the text editing experience
+                        for various use cases such as writing, communication, and content creation.</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tools">
+        <div class="tools">
+            <div class="new" data-aos="fade-down">
+                <h2 class="border_bottom">Tools</h2>
+            </div>
+            <div class="container tools_container" data-aos="fade-down">
+                <div class="bar">
+                    <div class="info">
+                        <span>HTML</span>
+                    </div>
+                    <div class="progress-line html">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <span>CSS</span>
+                    </div>
+                    <div class="progress-line css">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <span>Javascript</span>
+                    </div>
+                    <div class="progress-line javascript">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <span>Python</span>
+                    </div>
+                    <div class="progress-line python">
+                        <span></span>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- My Skills Section End Here -->
+
+    <!-- My Presentation Section Start Here -->
+    <section id="presentation">
+        <div class="container presentation_container">
+            <h2 class="border_bottom" data-aos="fade-down">Text Editor</h2>
+            <div class="row">
+                <div class="wrapper mx-auto" data-aos="fade-down">
+                    <div class="input-container">
+                        <textarea type="text" id="input" placeholder="Type something here.." autocomplete="off" autocapitalize="none"></textarea>
+                        <div class="suggestion">
+                            <span id="pre-end-suggestion" class="suggestion-span"></span>
+                            <span id="post-end-suggestion" class="suggestion-span"></span>
+                        </div>
+                    </div>
+                    <div class="emotions">
+                        <div>
+                            <h3 class="emotion-title">Emotion Analysis</h3>
+                        </div>
+                        <div class="progress-con" id="progress-container">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Portfolio Section End Here -->
+
+
+
+    <!-- FAQs Section Start Here -->
+    <section class="faqs" id="faqs">
+        <h2 class="border_bottom" data-aos="fade-down">
+            Frequently Asked Question
+        </h2>
+        <div class="container faqs_container">
+            <article class="faq" data-aos="fade-right">
+                <div class="faq_icon">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="question_ans">
+                    <h4>What is predictive text editor with emotion analysis?</h4>
+                    <p>Predictive text editor with emotion analysis involves integrating algorithms that
+                        detect emotions in text input, providing users with predictive suggestions tailored
+                        to the emotional context.</p>
+                </div>
+            </article>
+            <article class="faq" data-aos="fade-left">
+                <div class="faq_icon">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="question_ans">
+                    <h4>How does emotion analysis work in a predictive text editor?</h4>
+                    <p>Emotion analysis typically utilizes natural language processing (NLP) techniques to
+                        analyze text for emotional cues, such as sentiment, tone, or mood. The predictive
+                        text editor then uses this analysis to suggest appropriate words or phrases that align
+                        with the detected emotion.</p>
+                </div>
+            </article>
+            <article class="faq" data-aos="fade-right">
+                <div class="faq_icon">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="question_ans">
+                    <h4>What are the benefits of integrating emotion analysis into a predictive text editor?</h4>
+                    <p>Integrating emotion analysis into a predictive text editor can enhance user
+                        communication by offering suggestions that match the intended emotional tone,
+                        leading to more nuanced and effective text composition. It can also aid in empathy-driven
+                        interactions and improve user satisfaction.</p>
+                </div>
+            </article>
+            <article class="faq" data-aos="fade-left">
+                <div class="faq_icon">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="question_ans">
+                    <h4>Can emotion analysis accurately detect emotions in text?</h4>
+                    <p>Emotion analysis algorithms in predictive text editors can accurately detect broad emotional
+                        categories such as positive, negative, or neutral sentiment. However, the accuracy may vary
+                        depending on the complexity of emotions being analyzed and the quality of the training data</p>
+                </div>
+            </article>
+            <article class="faq" data-aos="fade-right">
+                <div class="faq_icon">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="question_ans">
+                    <h4>What types of emotions can be detected by a predictive text editor?</h4>
+                    <p>Predictive text editors can detect a range of emotions including joy, sadness, anger, fear, surprise,
+                        and more subtle emotional nuances like sarcasm or irony.</p>
+                </div>
+            </article>
+            <article class="faq" data-aos="fade-left">
+                <div class="faq_icon">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="question_ans">
+                    <h4>How is predictive text editor with emotion analysis different from traditional predictive text editors?</h4>
+                    <p>A predictive text editor with emotion analysis differs from traditional ones by providing suggestions
+                        based not only on grammatical correctness but also on emotional appropriateness, enhancing the user's
+                        ability to convey desired sentiments effectively.</p>
+                </div>
+            </article>
+            <article class="faq" data-aos="fade-right">
+                <div class="faq_icon">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="question_ans">
+                    <h4>Can emotion analysis help improve communication and understanding in text-based interactions?</h4>
+                    <p>Yes, emotion analysis can facilitate better understanding and empathy in text-based communication
+                        by guiding users to choose words and phrases that resonate with the emotional context of
+                        the conversation.</p>
+                </div>
+            </article>
+            <article class="faq" data-aos="fade-left">
+                <div class="faq_icon">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="question_ans">
+                    <h4>How reliable is emotion analysis in predicting the emotional tone of text?</h4>
+                    <p>The reliability of emotion analysis depends on the accuracy of the underlying
+                        algorithms and the quality of the training data. While it can provide valuable
+                        insights, there may be instances of misinterpretation or misclassification of
+                        emotions.</p>
+                </div>
+            </article>
+            <article class="faq" data-aos="fade-right">
+                <div class="faq_icon">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="question_ans">
+                    <h4>Can emotion analysis assist in personalized recommendations or suggestions within a text editor?</h4>
+                    <p>Yes, emotion analysis can assist in providing personalized recommendations or suggestions within a
+                        text editor by tailoring suggestions to match the user's emotional tone or preferences.</p>
+                </div>
+            </article>
+            <article class="faq" data-aos="fade-left">
+                <div class="faq_icon">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="question_ans">
+                    <h4>How does emotion analysis impact the user experience of the text editor?</h4>
+                    <p>Emotion analysis can enhance the user experience of the text editor by providing valuable insights
+                        into the emotional tone of the text, helping users communicate more effectively and engagingly.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+    <!-- FAQs Section End Here -->
+
+
+
+
+    <!-- Custom Javascript File Link -->
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+            once: false,
+        });
+    </script>
+</body>
+
+</html>
